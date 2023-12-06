@@ -1,7 +1,7 @@
 on: [push]
 jobs:
   run-python-file:
-    runs-on: ubuntu-latest
+    runs-on: docker
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
