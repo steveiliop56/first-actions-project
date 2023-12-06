@@ -3,13 +3,13 @@ jobs:
   run-python-file:
     runs-on: ubuntu-latest
     steps:
-       - name: Checkout Code
-         uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
        
-       - name: Install Python3 
-         uses: actions/setup-python@v4
-         with:
+      - name: Install Python3 
+        uses: actions/setup-python@v4
+        with:
           python-version: '3.10' 
 
-        - name: Run python file.
-          run: python3 main.py
+      - name: Run python file.
+        run: python3 main.py
