@@ -1,13 +1,13 @@
 on: [push]
 jobs:
   run-python-file:
-    runs-on: docker
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: https://github.com/actions/checkout@v4
        
       - name: Install Python3 
-        uses: actions/setup-python@v4
+        uses: https://github.com/actions/setup-python@v4
         with:
           python-version: '3.10' 
 
